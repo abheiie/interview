@@ -42,16 +42,15 @@ class User{
 }
 class PlayingStrategy{
     <<abstract class>>
-    +play()
+    +make_move()
 }
 
 class Random{
-    +play()
-
+    +make_move()
 }
 
 class MinMax{
-    +play()
+    +make_move()
 }
 
 class Board{
