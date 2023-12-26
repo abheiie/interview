@@ -50,7 +50,7 @@ SOLID Problems No -2 solved
 <br>
 <br>
 
-
+    For problem No. 3, checkout version 3 of class diagram 
 
 ```mermaid 
 classDiagram
