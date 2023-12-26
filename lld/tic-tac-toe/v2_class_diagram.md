@@ -39,7 +39,7 @@ SOLID Problems No -2 solved
 
     To solve SOLID Problems No -3, easy solution will be to create 3 different child classes Easybot, MediumBot, HardBot and make Bot Parent class.
 
-    Problem with this is that if our EasyBot and MediumBot both using same algo, we will se code duplication
+    Problem with this is that if our EasyBot and MediumBot both using same algo, we will see code duplication
 
     We should use Strategy Design Pattern here 
 
@@ -85,15 +85,16 @@ class Human{
 }
 class PlayingStrategy{
     <<abstract class>>
+    +play()
 }
 
 class Random{
-    -x:kk
+    +play()
 
 }
 
 class MinMax{
-    -x:kk
+    +play()
 }
 
 class Board{

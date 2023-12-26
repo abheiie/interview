@@ -59,10 +59,10 @@ class GameStatus{
     DRAWN
 }
 
-Board "1" *-- "1" Game : have
-Cell "M" *-- "1" Board : have
-Bot "1" *-- "1" Game : have
-Human "1" *-- "1" Game : have
+Board "1" *-- "1" Game : has
+Cell "M" *-- "1" Board : has
+Bot "1" *-- "1" Game : has
+Human "1" *-- "1" Game : has
 
 ```
 
