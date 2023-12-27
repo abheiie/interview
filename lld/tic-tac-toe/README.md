@@ -79,4 +79,4 @@
     check wins
 
 # 3. Class Diagram
-    Class diagram will be in iteration, chakout file with name as v[num]_class_diagram.md
+    Class diagram will be in iteration, checkout file with name as v[num]_class_diagram.md

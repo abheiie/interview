@@ -13,7 +13,7 @@ class Game{
     -status : GameStatus
     -winner_id : int
     +start_game()
-    +paly()
+    +make_move()
     +check_winner()
 }
 
