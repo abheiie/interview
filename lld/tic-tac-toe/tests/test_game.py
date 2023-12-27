@@ -17,7 +17,7 @@ class TestGame(unittest.TestCase):
         game = (
             Game.builder()
             .with_size(TestGame.BOARD_SIZE)
-            .with_player(HumanPlayer(GameSymbol.X, User("user", "email", "photo")))
+            .with_player(HumanPlayer(GameSymbol.X, User()))
             .with_player(
                 BotPlayer(GameSymbol.O, GameLevel.EASY, RandomPlayingStrategy())
             )
