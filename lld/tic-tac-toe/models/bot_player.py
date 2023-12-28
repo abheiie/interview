@@ -14,8 +14,10 @@ class BotPlayer(Player):
         playing_strategy: PlayingStrategy,
     ) -> None:
         super().__init__(game_symbol)
-        self.__game_level = game_level
-        self.__playing_strategy = playing_strategy
+        self.game_level = game_level
+        self.playing_strategy = playing_strategy
 
     def make_move(self, board: Board) -> BoardCell:
-        return self.__playing_strategy.make_move(board)
+        move = self.playing_strategy.make_move(board)
+        move.symbol = self.game_symbol
+        return move

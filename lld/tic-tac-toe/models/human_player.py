@@ -11,4 +11,7 @@ class HumanPlayer(Player):
         self.user = user
 
     def make_move(self, board: Board) -> BoardCell:
-        pass
+        row, column = list(map(int, input("Please enter Row and Column: ").split()))
+        move = BoardCell(row, column, self.game_symbol)        
+        return move
+        

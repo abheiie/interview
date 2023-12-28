@@ -1,0 +1,2 @@
+// ask use for type of bot
+// type of game human vs human or human vs bot 

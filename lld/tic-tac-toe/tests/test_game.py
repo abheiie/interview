@@ -17,12 +17,13 @@ class TestGame(unittest.TestCase):
         game = (
             Game.builder()
             .with_size(TestGame.BOARD_SIZE)
-            .with_player(HumanPlayer(GameSymbol.X, User()))
+            .with_player(HumanPlayer(GameSymbol.X, User("name", "email", "photo")))
             .with_player(
                 BotPlayer(GameSymbol.O, GameLevel.EASY, RandomPlayingStrategy())
             )
             .build()
         )
+        self.assertIsInstance(game, Game, "Game should be an instance of Game")
         self.assertEqual(2, len(game.players), "The game should have 2 players")
 
     def test_create_board(self):
